@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #020a49;
+            padding: 0;
+            text-align: center;
+        }
+
+        .container {
+            margin: 10px auto;
+            max-width: 1200px;
+            padding: 20px;
+            background-color: #010539;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, p, h3, ul, li {
+            color: #ffffff;
+        }
+
+        #informacion {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Darle clic al Ing.</h1>
+    <center><img id="imagen" src="LLI.png" alt="Imagen 322x320" width="322" height="320"></center>
+<div id="informacion">
+        <h2>Mi información</h2>
+        <p><strong>Nombre:</strong> Lozano Lozano Isaac</p>
+        <p><strong>Dirección:</strong> Acapulco de Juarez, Gro, México</p>
+        <p><strong>Teléfono:</strong> 7441318761</p>
+        <p><strong>Email:</strong> 20TheLoazanoIsaac02@hotmail.com</p>
+
+        <h2>Perfil profesional</h2>
+        <p>Ingeniero en sistemas con 4 años y medio de experiencia. En mis empleos anteriores me he destacado por desarrollar soluciones de software teniendo en cuenta el ciclo de vida del mismo. Además, tengo conocimientos de programación y manejo avanzado del lenguaje C++.</p>
+
+        <h2>Experiencia Laboral</h2>
+        <p><strong>Empresa:</strong> CAPAMA</p>
+        <p><strong>Puesto:</strong> Ingeniero en mantenimiento de equipos de hardware</p>
+        <p><strong>Fecha:</strong> 15 de Junio del 2020</p>
+
+        <h3>Responsabilidades</h3>
+        <ul>
+            <li>Soporte Técnico: Brindar asistencia técnica a los usuarios finales, ayudándolos a resolver problemas de hardware y proporcionando instrucciones sobre su uso adecuado.</li>
+            <li>Diagnóstico de Problemas: Identificar y diagnosticar problemas en el hardware de computadoras y otros dispositivos electrónicos.</li>
+            <li>Reparación de Hardware: Realizar reparaciones o reemplazos de componentes defectuosos, como discos duros, tarjetas de memoria, placas base, unidades de CD/DVD, etc.</li>
+            <li>Actualizaciones de Hardware: Realizar actualizaciones de hardware, como agregar RAM, actualizar tarjetas gráficas o instalar unidades de estado sólido (SSD) para mejorar el rendimiento de las computadoras.</li>
+            <li>Instalación de Hardware Nuevo: Configurar e instalar nuevo hardware, como impresoras, escáneres, cámaras web, etc., y asegurarse de que funcionen correctamente.</li>
+            <li>Mantenimiento Preventivo: Realizar tareas de mantenimiento regular, como limpieza de polvo, reemplazo de pasta térmica en CPU, y verificación de conexiones sueltas para prevenir problemas futuros.</li>
+        </ul>
+        <h3>Logros</h3>
+        <ul>
+            <li>Mejora de la Eficiencia: Implementar procedimientos de mantenimiento preventivo que reduzcan el tiempo de inactividad de las máquinas y mejoren la eficiencia operativa.</li>
+            <li>Reducción de Costos: Identificar y aplicar estrategias de ahorro de costos, como la actualización de componentes obsoletos en lugar de reemplazar máquinas completas.</li>
+            <li>Seguridad Reforzada: Asegurarse de que todos los dispositivos cumplan con los estándares de seguridad, protegiendo así la integridad de los datos y la privacidad de los usuarios.</li>
+            <li>Resolución Rápida de Problemas: Desarrollar habilidades para diagnosticar y resolver problemas de hardware de manera eficiente, minimizando el impacto en la productividad.</li>
+            <li>Actualizaciones Exitosas: Realizar actualizaciones de hardware que mejoren significativamente el rendimiento de las computadoras, lo que puede aumentar la satisfacción del usuario.</li>
+        </ul>
+
+        <h2>Educación</h2>
+        <p><strong>Universidad:</strong> Instituto Tecnológico de Acapulco</p>
+        <p><strong>Título:</strong> En Proceso</p>
+        <p><strong>Año ingresado:</strong> 2020</p>
+        <p><strong>Año finalizado:</strong> </p>
+
+        <h2>Habilidades profesionales</h2>
+        <ul>
+            <li>Conocimiento en Java.</li>
+            <li>Manejo experto de sistemas operativos Windows y Linux.</li>
+            <li>Resolución de problemas.</li>
+            <li>Experiencia en uso de SQL Server.</li>
+            <li>Comunicación asertiva.</li>
+            <li>Planificación de proyectos.</li>
+        </ul>
+
+        <h2>Información adicional</h2>
+        <p><strong>Inglés (B2).</strong></p>
+        <p><strong>Certificación Cisco.</strong></p>
+    </div>
+
+    <script>
+
+        const imagen = document.getElementById("imagen");
+        const informacion = document.getElementById("informacion");
+
+        let informacionVisible = false;
+        function toggleInformacion() {
+            if (informacionVisible) {
+                informacion.style.display = "none";
+            } else {
+                informacion.style.display = "block";
+            }
+            informacionVisible = !informacionVisible;
+        }
+        imagen.addEventListener("click", toggleInformacion);
+    </script>
+</body>
+</html>
